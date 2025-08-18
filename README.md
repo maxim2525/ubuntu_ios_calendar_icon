@@ -10,11 +10,15 @@ suitable for chromium apps
 
 ```
 sudo apt-get install imagemagick
+```
 
-you'll need these fonts:
+you'll need these fonts:</br>
+```
 Salve-Sans.otf
 CamberTRIAL-Rg.otf (https://blogfonts.com/camber-trial-rg.font)
 ```
+
+## installation
 
 1. install https://www.icloud.com/calendar/ as an app and create a shortcut/place it in the dock
 2. download the script and place it in a folder
