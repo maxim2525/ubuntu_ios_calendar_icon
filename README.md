@@ -10,6 +10,8 @@ suitable for chromium apps
 
 ```
 sudo apt-get install imagemagick
+
+you'll need these fonts:
 Salve-Sans.otf
 CamberTRIAL-Rg.otf (https://blogfonts.com/camber-trial-rg.font)
 ```
