@@ -1,4 +1,5 @@
-<img width="386" height="90" alt="image" src="https://github.com/user-attachments/assets/267ee671-e1f4-47b2-8ce8-352f2b300e90" />
+<img width="250" height="85" alt="image" src="https://github.com/user-attachments/assets/6a40d598-dff8-43e2-b06a-c01e1aae7107" />
+
 
 
 generates an icon with the current date like the mac/ios icon for the calendar application.
