@@ -14,10 +14,9 @@ CamberTRIAL-Rg.otf (https://blogfonts.com/camber-trial-rg.font)
 ```
 
 1. install https://www.icloud.com/calendar/ as an app and create a shortcut/place it in the dock
-2. download the script, place it in a folder and run it. it should generate a ios_calendar.png file
-3. go to ~/.local/share/applications and find the calendar .desktop file and open it with an editor
-4. replace the location in the line which starts with "Icon=" with the file location of the ios_calendar.png file
-
+2. download the script and place it in a folder
+3. go to `~/.local/share/applications` and copy the path of the calendar .desktop file and add it in the script file in the line 7 which starts with `DESKTOP_FILE=`
+4. run the script
 
 
 to automate the icon generation:
