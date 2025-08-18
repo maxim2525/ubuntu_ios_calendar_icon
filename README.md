@@ -50,7 +50,7 @@ sudo systemctl daemon-reexec
 sudo systemctl daemon-reload
 sudo systemctl enable --now daily-task.timer
 ```
-
+## full day name
 
 to use full day name open the .sh file and uncomment this line
 
