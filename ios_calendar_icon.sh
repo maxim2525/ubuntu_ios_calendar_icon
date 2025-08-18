@@ -23,7 +23,7 @@ ICON_PATH="${SCRIPT_DIR}/${ICON_NAME}"
 rm -f "${SCRIPT_DIR}/ios_calendar_"*.png
 
 # Create the new icon
-convert "${SCRIPT_DIR}/blank.png" \
+convert "${SCRIPT_DIR}/blank_calendar.png" \
   -background none \
   -gravity North -pointsize 403 -font "$HOME/.local/share/fonts/CamberTRIAL-Rg.otf" \
   -fill red -annotate +0+170 "$DAY_NAME" \
