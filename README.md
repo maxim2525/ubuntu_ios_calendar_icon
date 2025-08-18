@@ -1,1 +1,51 @@
 # ios_calendar_icon
+
+<img width="386" height="90" alt="image" src="https://github.com/user-attachments/assets/267ee671-e1f4-47b2-8ce8-352f2b300e90" />
+
+
+generates an icon with the current date like the mac/ios icon for the calendar application.
+
+requires:
+
+> sudo apt-get install imagemagick
+
+> Salve-Sans.otf
+
+> CamberTRIAL-Rg.otf (https://blogfonts.com/camber-trial-rg.font)
+
+to automate the icon generation:
+
+sudo nano /etc/systemd/system/daily-task.service
+```
+[Unit]
+Description=refresh calendar icon
+
+[Service]
+Type=oneshot
+ExecStart=/home/youruser/apps/ios_calendar_icon.sh
+```
+
+sudo nano /etc/systemd/system/daily-task.timer
+```
+[Unit]
+Description=Run daily task once per day
+
+[Timer]
+OnCalendar=*-*-* 00:00
+Persistent=true
+
+[Install]
+WantedBy=timers.target
+```
+
+to use full dayname open the .sh file and uncomment this line
+
+`
+#DAY_NAME=$(date +%A)
+`
+
+and comment the line underneath
+
+`
+DAY_NAME=$(date +%a | tr '[:lower:]' '[:upper:]' | cut -c1-2)
+`
