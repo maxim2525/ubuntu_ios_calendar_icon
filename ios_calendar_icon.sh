@@ -19,8 +19,11 @@ MONTH_DAY=$(date +%m%d)
 ICON_NAME="ios_calendar_${MONTH_DAY}.png"
 ICON_PATH="${SCRIPT_DIR}/${ICON_NAME}"
 
+# remove old icons
+rm -f "${SCRIPT_DIR}/ios_calendar_"*.png
+
 # Create the new icon
-convert "${SCRIPT_DIR}/ios_calendar_blank.png" \
+convert "${SCRIPT_DIR}/blank.png" \
   -background none \
   -gravity North -pointsize 403 -font "$HOME/.local/share/fonts/CamberTRIAL-Rg.otf" \
   -fill red -annotate +0+170 "$DAY_NAME" \
