@@ -1,9 +1,9 @@
-# ios_calendar_icon
-
 <img width="386" height="90" alt="image" src="https://github.com/user-attachments/assets/267ee671-e1f4-47b2-8ce8-352f2b300e90" />
 
 
 generates an icon with the current date like the mac/ios icon for the calendar application.
+
+suitable for chromium apps
 
 requires:
 
@@ -12,6 +12,14 @@ requires:
 > Salve-Sans.otf
 
 > CamberTRIAL-Rg.otf (https://blogfonts.com/camber-trial-rg.font)
+
+
+1. install https://www.icloud.com/calendar/ as an app and create a shortcut/place it in the dock
+2. download the script, place it in a folder and run it. it should generate a ios_calendar_.png file
+3. go to ~/.local/share/applications and find the calendar shortcut file and open it with an editor
+4. replace the Icon=xy with the file location of the ios_calendar_.png file
+
+
 
 to automate the icon generation:
 
@@ -38,7 +46,7 @@ Persistent=true
 WantedBy=timers.target
 ```
 
-to use full dayname open the .sh file and uncomment this line
+to use full day name open the .sh file and uncomment this line
 
 `
 #DAY_NAME=$(date +%A)
