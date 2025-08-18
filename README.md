@@ -5,14 +5,13 @@ generates an icon with the current date like the mac/ios icon for the calendar a
 
 suitable for chromium apps
 
-requires:
+##requirements
 
-> sudo apt-get install imagemagick
-
-> Salve-Sans.otf
-
-> CamberTRIAL-Rg.otf (https://blogfonts.com/camber-trial-rg.font)
-
+```
+sudo apt-get install imagemagick
+Salve-Sans.otf
+CamberTRIAL-Rg.otf (https://blogfonts.com/camber-trial-rg.font)
+```
 
 1. install https://www.icloud.com/calendar/ as an app and create a shortcut/place it in the dock
 2. download the script, place it in a folder and run it. it should generate a ios_calendar.png file
