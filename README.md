@@ -5,7 +5,7 @@ generates an icon with the current date like the mac/ios icon for the calendar a
 
 suitable for chromium apps
 
-##requirements
+## requirements
 
 ```
 sudo apt-get install imagemagick
@@ -19,7 +19,7 @@ CamberTRIAL-Rg.otf (https://blogfonts.com/camber-trial-rg.font)
 4. run the script
 
 
-to automate the icon generation:
+## to automate the icon generation
 
 sudo nano /etc/systemd/system/daily-task.service
 ```
