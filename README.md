@@ -26,7 +26,6 @@ CamberTRIAL-Rg.otf (https://blogfonts.com/camber-trial-rg.font)
 4. run `install.sh <path-of-calendar-desktop-file>`
 5. you can delete install.sh after that
 
-```
 ## full day name
 
 to use full day name open the .sh file and uncomment this line
