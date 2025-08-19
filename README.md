@@ -28,7 +28,7 @@ CamberTRIAL-Rg.otf (https://blogfonts.com/camber-trial-rg.font)
 
 ## full day name
 
-to use full day name open the .sh file and uncomment this line
+to use full day name open the ios_calendar_icon.sh file and uncomment this line
 
 `
 #DAY_NAME=$(date +%A)
