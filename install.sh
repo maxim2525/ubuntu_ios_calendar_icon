@@ -53,6 +53,7 @@ EOF
 sudo systemctl daemon-reexec
 sudo systemctl daemon-reload
 sudo systemctl enable --now daily-task.timer
+"${TARGET_SCRIPT}"
 
 echo "✅ daily-task.timer is active and will run ios_calendar_icon.sh daily at midnight."
 echo "➡️  Set DESKTOP_FILE=${DESKTOP_FILE_NAME} inside ios_calendar_icon.sh"
