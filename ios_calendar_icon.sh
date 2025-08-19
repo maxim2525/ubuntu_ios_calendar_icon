@@ -2,6 +2,7 @@
 
 # Get directory where this script is located
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+USER_HOME="$(echo "$SCRIPT_DIR" | cut -d/ -f1-3)"  # yields /home/maxim
 
 # Set the path to your .desktop file
 DESKTOP_FILE=BLANK
@@ -25,9 +26,9 @@ rm -f "${SCRIPT_DIR}/ios_calendar_"*.png
 # Create the new icon
 convert "${SCRIPT_DIR}/blank_calendar.png" \
   -background none \
-  -gravity North -pointsize 40 -font "$HOME/.local/share/fonts/CamberTRIAL-Rg.otf" \
+  -gravity North -pointsize 40 -font "$USER_HOME/.local/share/fonts/CamberTRIAL-Rg.otf" \
   -fill red -annotate +0+18 "$DAY_NAME" \
-  -gravity Center -pointsize 140 -font "$HOME/.local/share/fonts/Salve-Sans.otf" \
+  -gravity Center -pointsize 140 -font "$USER_HOME/.local/share/fonts/Salve-Sans.otf" \
   -fill black -annotate +0+36 "$DAY_NUMBER" \
   "$ICON_PATH"
 
