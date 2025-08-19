@@ -2,7 +2,7 @@
 
 # Get directory where this script is located
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-USER_HOME="$(echo "$SCRIPT_DIR" | cut -d/ -f1-3)"  # yields /home/maxim
+USER_HOME="$(echo "$SCRIPT_DIR" | cut -d/ -f1-3)"
 
 # Set the path to your .desktop file
 DESKTOP_FILE=BLANK
