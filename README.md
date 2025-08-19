@@ -21,40 +21,11 @@ CamberTRIAL-Rg.otf (https://blogfonts.com/camber-trial-rg.font)
 ## installation
 
 1. install https://www.icloud.com/calendar/ as an app and create a shortcut/place it in the dock
-2. download the script and place it in a folder
+2. download the scripts and place it in a folder
 3. go to `~/.local/share/applications` and copy the path of the calendar .desktop file and add it in the script file in the line 7 which starts with `DESKTOP_FILE=`
-4. run the script
+4. run `ios_calendar_icon.sh`
+5. copy the path of `ios_calendar_icon.sh` and run `install_timer.sh <path-of-ios_calendar_icon.sh>`
 
-
-## to automate the icon generation
-
-sudo nano /etc/systemd/system/daily-task.service
-```
-[Unit]
-Description=refresh calendar icon
-
-[Service]
-Type=oneshot
-ExecStart=/home/youruser/apps/ios_calendar_icon.sh
-```
-
-sudo nano /etc/systemd/system/daily-task.timer
-```
-[Unit]
-Description=Run daily task once per day
-
-[Timer]
-OnCalendar=*-*-* 00:00
-Persistent=true
-
-[Install]
-WantedBy=timers.target
-```
-
-```
-sudo systemctl daemon-reexec
-sudo systemctl daemon-reload
-sudo systemctl enable --now daily-task.timer
 ```
 ## full day name
 
