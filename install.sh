@@ -22,6 +22,8 @@ fi
 # Replace DESKTOP_FILE=BLANK with DESKTOP_FILE=<your value>
 sed -i "s|^DESKTOP_FILE=.*|DESKTOP_FILE=${DESKTOP_FILE_NAME}|" "$TARGET_SCRIPT"
 
+chmod +x "$TARGET_SCRIPT"
+
 # Define paths
 SERVICE_FILE="/etc/systemd/system/daily-task.service"
 TIMER_FILE="/etc/systemd/system/daily-task.timer"
