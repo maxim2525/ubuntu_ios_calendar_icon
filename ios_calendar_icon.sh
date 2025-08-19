@@ -4,7 +4,7 @@
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 # Set the path to your .desktop file
-DESKTOP_FILE="$HOME/.local/share/applications/ios_calendar.desktop"
+DESKTOP_FILE=BLANK
 
 #Get current date info
 
