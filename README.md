@@ -22,9 +22,9 @@ CamberTRIAL-Rg.otf (https://blogfonts.com/camber-trial-rg.font)
 
 1. install https://www.icloud.com/calendar/ as an app and create a shortcut/place it in the dock
 2. download the scripts and place it in a folder
-3. go to `~/.local/share/applications` and copy the path of the calendar .desktop file and add it in the script file in the line 7 which starts with `DESKTOP_FILE=`
-4. run `ios_calendar_icon.sh`
-5. copy the path of `ios_calendar_icon.sh` and run `install_timer.sh <path-of-ios_calendar_icon.sh>`
+3. go to `~/.local/share/applications` and copy the path of the calendar .desktop file
+4. run `install.sh <path-of-calendar-desktop-file>`
+5. you can delete install.sh after that
 
 ```
 ## full day name
