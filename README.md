@@ -24,7 +24,7 @@ CamberTRIAL-Rg.otf (https://blogfonts.com/camber-trial-rg.font)
 2. download the scripts and place it in a folder
 3. go to `~/.local/share/applications` and copy the path of the calendar .desktop file
 4. run `install.sh <path-of-calendar-desktop-file>`
-5. you can delete install.sh after that
+5. you can delete `install.sh` after that
 
 ## full day name
 
