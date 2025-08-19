@@ -25,10 +25,10 @@ rm -f "${SCRIPT_DIR}/ios_calendar_"*.png
 # Create the new icon
 convert "${SCRIPT_DIR}/blank_calendar.png" \
   -background none \
-  -gravity North -pointsize 403 -font "$HOME/.local/share/fonts/CamberTRIAL-Rg.otf" \
-  -fill red -annotate +0+170 "$DAY_NAME" \
-  -gravity Center -pointsize 1400 -font "$HOME/.local/share/fonts/Salve-Sans.otf" \
-  -fill black -annotate +0+350 "$DAY_NUMBER" \
+  -gravity North -pointsize 40 -font "$HOME/.local/share/fonts/CamberTRIAL-Rg.otf" \
+  -fill red -annotate +0+18 "$DAY_NAME" \
+  -gravity Center -pointsize 140 -font "$HOME/.local/share/fonts/Salve-Sans.otf" \
+  -fill black -annotate +0+36 "$DAY_NUMBER" \
   "$ICON_PATH"
 
 # Update the .desktop file to point to the new icon
