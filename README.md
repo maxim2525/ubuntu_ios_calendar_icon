@@ -28,16 +28,14 @@ CamberTRIAL-Rg.otf (https://blogfonts.com/camber-trial-rg.font)
 
 <br/> use `uninstall.sh` to delete the service and timer
 
-## full day name
+## dayname options
 
-to use full day name open the ios_calendar_icon.sh file and uncomment this line
+there are multiple options on how to display the day name:
 
-`
-#DAY_NAME=$(date +%A)
-`
+-display full day name
+-display short day name (2 letters)
+-display short day name (3 letters)
+-display month name (e.g., September)
+-display three letters of the month (e.g., Sep)
 
-and comment the line underneath
-
-`
-DAY_NAME=$(date +%a | tr '[:lower:]' '[:upper:]' | cut -c1-2)
-`
+open ios_calendar_icon.sh with an editor and comment out the DAY_NAME line underneath the according comment for the option
