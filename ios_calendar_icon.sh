@@ -9,10 +9,22 @@ DESKTOP_FILE=BLANK
 
 #Get current date info
 
-#uncomment first DAY_NAME and comment second one to show the full day name
+
+#display full day name
 #DAY_NAME=$(date +%A) 
 
-DAY_NAME=$(date +%a | tr '[:lower:]' '[:upper:]' | cut -c1-2)
+#display short day name (2 letters)
+#DAY_NAME=$(date +%a | tr '[:lower:]' '[:upper:]' | cut -c1-2)
+
+#display short day name (3 letters)
+DAY_NAME=$(date +%a | tr '[:lower:]' '[:upper:]' | cut -c1-3)
+
+# display month name (e.g., September)
+#DAY_NAME=$(date +%B)
+
+# display three letters of the month (e.g., Sep)
+#DAY_NAME=$(date +%b | tr '[:lower:]' '[:upper:]')
+
 DAY_NUMBER=$(date +%-d)
 MONTH_DAY=$(date +%m%d)
 
