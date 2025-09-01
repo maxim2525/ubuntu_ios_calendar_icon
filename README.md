@@ -32,10 +32,10 @@ CamberTRIAL-Rg.otf (https://blogfonts.com/camber-trial-rg.font)
 
 there are multiple options on how to display the day name:
 
--display full day name
--display short day name (2 letters)
--display short day name (3 letters)
--display month name (e.g., September)
--display three letters of the month (e.g., Sep)
+- display full day name
+- display short day name (2 letters)
+- display short day name (3 letters)
+- display month name (e.g., September)
+- display three letters of the month (e.g., Sep)
 
 open ios_calendar_icon.sh with an editor and comment out the DAY_NAME line underneath the according comment for the option
